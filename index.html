@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Generator wyników</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn t work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body>
+    <div id="page">
+
+        <main id="main-content" class="main-content p-5">
+
+            <section id="main" class="main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h1 class="text-center text-uppercase">Generator wyników</h1>
+                            <div class="text-center py-4">
+                                <p class="h4 text-uppercase">Losuj wynik: </p>
+                                <div class="btn-group" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-dark draw__button draw__button--football" data-sport="1"><span class="far fa-futbol mr-2"></span> Piłka nożna</button>
+                                    <button type="button" class="btn btn-dark draw__button draw__button--basketball" data-sport="2" disabled><span class="fas fa-basketball-ball mr-2"></span> Koszykówka</button>
+                                    <button type="button" class="btn btn-dark draw__button draw__button--volleyball" data-sport="3" disabled><span class="fas fa-volleyball-ball mr-2"></span> Siatkówka</button>
+                                </div>
+                            </div>
+                            <div id="scores" class="score__container">
+                                <div class="container-fluid">
+                                    <div class="row h2">
+                                        <div class="col px-0 text-right">
+                                            <span class="score score--home">0</span>
+                                        </div>
+                                        <div class="col-auto">
+                                            <span>:</span>
+                                        </div>
+                                        <div class="col px-0 text-left">
+                                            <span class="score score--away">0</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
